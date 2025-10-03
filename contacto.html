@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" />
+    <title>Contacto</title>
+</head>
+<body>
+    <header id="inicio">
+        <div class="navbar">
+        <nav><ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#Nosotros">Nosotros</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul></nav>
+        </div>
+        </header>
+        <main> <section class="formulario">
+            <form action="https://formspree.io/f/mandvqnn" method="POST">
+  <label for="nombre">Nombre</label>
+  <input type="text" id="nombre" name="nombre" class="input-estandar" required />
+
+  <label for="email">Email</label>
+  <input
+    type="email"
+    id="email"
+    name="email"
+    class="input-estandar"
+    required
+    placeholder="email@dominio.com"
+  />
+
+  <label for="telefono">Telefono</label>
+  <input
+    type="tel"
+    id="telefono"
+    name="telefono"
+    class="input-estandar"
+    required
+    placeholder="(XX) XXXXX-XXXX"
+  />
+
+  <label for="mensaje">Mensaje</label>
+  <textarea
+    cols="70"
+    rows="10"
+    placeholder="Agenda tu turno"
+    id="mensaje"
+    name="mensaje"
+    class="input-estandar"
+    required
+  ></textarea>
+
+  <fieldset class="elegir">
+    <legend>Como prefiere que nos contactemos:</legend>
+    <label for="radio-email">
+      <input
+        type="radio"
+        name="contacto"
+        value="email"
+        id="radio-email"
+      />
+      Email
+    </label>
+
+    <label for="radio-telefono">
+      <input
+        type="radio"
+        name="contacto"
+        value="telefono"
+        id="radio-telefono"
+      />
+      Telefono
+    </label>
+
+    <label for="radio-whatsapp">
+      <input
+        type="radio"
+        name="contacto"
+        value="whatsapp"
+        id="radio-whatsapp"
+        checked
+      />
+      WhatsApp
+    </label>
+  </fieldset>
+
+  <div class="separar">
+    <fieldset class="contboton">
+      <input type="submit" value="Enviar" class="enviar" />
+      <input type="reset" value="Limpiar">
+
+    </fieldset>
+  </div>
+</form></section>
+ <section class="redes">
+            <p class="titulo-redes">Sígueme en redes:</p>
+            <div class="iconsfin">
+                <a href="https://wa.me/5491134999150?text=Hola%20Sole,%20te%20contacto%20por" target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="insta"></a>
+                <a href="https://facebook.com" target="_blank"><img src="img/facebook.png" alt="face"></a>
+            </div>
+        </section>
+   <a href="https://wa.me/5491134999150" class="btn-whatsapp" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a></main>
+        <footer><p>© 2025 Desarrollado por Pérez Griselda Soledad. Todos los derechos reservados.</p></footer>
+</body>
+</html>

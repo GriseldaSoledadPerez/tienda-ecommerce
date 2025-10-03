@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Display:ital@0;1&family=Krona+One&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Playfair Display", serif;
+    padding: 0;
+    margin: 0;
+    
+}
+
+header{
+    color: rgb(0, 0, 0);
+}
+.navbar{
+    background-color: bisque;
+    width: 100%;
+    height: 52px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav{
+    display: flex;
+    font-weight: 600;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.nav-list a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(226, 6, 116);
+}
+.nav-list a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: rgb(226, 6, 116);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.4s ease;
+}
+
+.nav-list a:hover::before {
+  width: 100%;
+}
+h1{
+    padding-top: 40px ;
+}
+.entrada{
+    display: flex;           /* activa el flexbox */
+    align-items: center;       /* centra verticalmente logo y título */
+    gap: 15px;                 /* espacio entre logo y título */
+}
+.logo {
+  width: 10px;  
+  height: auto;   
+  padding: 50px 0 8px 0;
+}
+header img{
+    width: 50%;
+}
+.intronos{
+    padding: 80px 20px 20px 60px;
+}
+h3{
+    padding: 10px 30px 0 60px;
+}
+.nosotros{
+    display: flex;
+    padding: 10px 60px 20px 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+}
+.cajauno{
+    text-align: center;
+    padding: 20px 20px;
+    background: rgba(218, 177, 218, 0.747);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.cajados{
+    text-align: center;
+    gap: 20px;
+}
+.cajados p{
+    color: violet;
+    font-size: 1.8rem;
+}
+.mediosdepago {
+  display: flex;
+  flex-direction: column; 
+  gap: 15px;  
+            
+}
+.formasdepago {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-weight: 500;
+  justify-content: flex-start; /* ícono a la izquierda, texto a la derecha */
+}
+.tituloproducto{
+    margin-top: 50px;
+    font-size: 1.6rem;
+}
+
+.productos {
+    background: linear-gradient(#fefefe, rgb(226, 6, 116));
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 40px 20px 40px 20px;
+    justify-items: center;
+    font-weight: bold;
+}
+article{ 
+    width: 250px;
+    background-color: bisque;
+    display: flex;            /* activa flexbox */
+    flex-direction: column;   /* organiza los hijos en columna */
+    align-items: center;      /* opcional: centra horizontalmente */
+    gap: 10px;                /* espacio entre elementos */
+    padding: 20px 10px; 
+    border: 1px solid  rgb(116, 3, 78);
+    border-radius: 36px;
+    transition: transform 0.3s ease;
+}
+article:hover {
+  transform: translateY(-8px);
+}
+article img{
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 4px 10px rgb(116, 3, 78);
+}
+button {
+  background: #ff6b81;          /* color de fondo (rosa fuerte) */
+  color: white;                 /* color del icono */
+  border: none;                 /* sin borde */
+  border-radius: 50%;           /* redondo */
+  width: 60px;                  /* ancho */
+  height: 60px;                 /* alto */
+  font-size: 22px;              /* tamaño del ícono */
+  cursor: pointer;              /* manito al pasar */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* sombra */
+  transition: all 0.3s ease;    /* animación suave */
+}
+
+button:hover {
+  background: #ff4757;       
+  transform: scale(1.1);        
+  box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+}
+.btn-whatsapp {
+  position: fixed;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  bottom: 50px;
+  right: 50px;
+  background-color:   #25D366; ; 
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-whatsapp:hover {
+  background-color: #be3fae;  /* verde más oscuro */
+  transform: scale(1.1);      /* efecto agrandar */
+}
+
+
+footer{
+    background-color: rgb(226, 6, 116);
+    color: aliceblue;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+a.material-symbols-outlined {
+  color: rgb(221, 162, 53);          /* cambia el color del ícono/texto */
+  font-size: 30px;     /* opcional: tamaño del ícono */
+  text-decoration: none; /* quita el subrayado */
+}
+/* TABLET */
+@media (max-width: 768px) {
+  /* Navbar: reducir gap y altura */
+  .navbar {
+    height: 48px;
+    padding: 10px;
+  }
+
+  .nav-list {
+    gap: 15px; /* menos espacio entre links */
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 5px;
+  }
+
+  .entrada {
+    padding-top: 15px;
+    flex-direction: column; /* logo encima del título */
+    gap: 10px;
+    text-align: center;
+  }
+
+  header img.logo {
+    width: 150px; /* reducir tamaño del logo */
+  }
+
+  .intronos {
+    padding: 50px 20px 20px 20px;
+    text-align: center;
+  }
+
+  h3 {
+    padding: 10px 20px 0 20px;
+    text-align: center;
+  }
+
+  .nosotros {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 20px 20px 20px;
+  }
+
+  .productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* dos columnas en tablet */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
+    .productos article:last-child {
+    grid-column: 1 / -1; /* ocupa toda la fila */
+    justify-self: center; /* lo centra horizontalmente */
+  }
+
+  article img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .btn-whatsapp {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    bottom: 30px;
+    right: 30px;
+  }
+}
+/* ==================== CELULAR (480px) ==================== */
+@media (max-width: 480px) {
+
+  /* Navbar: menú horizontal scrollable para no romper layout */
+  .navbar {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .nav-list {
+    flex-direction: row;        /* horizontal */
+    gap: 15px;
+    overflow-x: auto;           /* se puede scrollear si hay muchos links */
+    justify-content: flex-start;
+    padding: 0 10px;
+  }
+
+  .nav-list a {
+    font-size: 0.9rem;          /* tamaño de texto menor */
+  }
+
+  /* Header: logo y título centrados y proporcionales */
+  .entrada {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  header img.logo {
+    width: 120px;               /* tamaño proporcional */
+    height: auto;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0;
+  }
+
+  .intronos {
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  h3 {
+    padding: 10px 10px 5px 10px;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  /* Sección Nosotros */
+  .nosotros {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 10px;
+    align-items: center;
+  }
+
+  .cajauno, .cajados {
+    width: 90%;                /* que no se desborden */
+    padding: 15px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 250px;
+  }
+
+  /* Productos */
+  .productos {
+    grid-template-columns: 1fr; /* 1 columna */
+    gap: 15px;
+    padding: 10px;
+  }
+
+  article {
+    width: 80%;                 /* ocupa casi todo el ancho */
+    padding: 15px;
+  }
+
+  article img {
+    width: 80%;
+    height: auto;               /* mantiene proporción */
+  }
+
+  /* Botón flotante WhatsApp */
+  .btn-whatsapp {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
